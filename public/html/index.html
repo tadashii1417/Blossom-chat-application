@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row menubar">
+            <div class="col-6 logo">Welcome to Blossom</div>
+            <div class="col-6 d-flex">
+                <div class="greeting ml-auto">
+                    Hello, <a href="#" class="username">ntduy</a> <a href="#" class="badge badge-primary">Log out</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Done -->
+
+    <div class="container">
+
+        <!-- Begin overall row -->
+        <div class="row">
+
+            <!-- Chat session -->
+            <div class="col-9">
+                <!-- Receiver name part -->
+                <div class="receiver">
+                    Receiver
+                    <span class="dot"></span>
+                    <form action="" method="POST">
+                            <a name="" id="" href="#" role="button" class="chat-box_video"><i class="fas fa-video"></i></a>
+                    </form>
+                </div>
+                <!-- End Receiver name part -->
+
+                <!-- Chat messages display part -->
+                <div class="col-12 chat-screen">
+                    <div class="row">
+                        <!-- Friend's message -->
+                        <div class="col-8 my-friend-message d-flex flex-row-reverse ml-auto">Friend's message</div>
+
+                        <!-- My message -->
+                        <div class="col-8 my-message d-flex">My message</div>
+                        
+                    </div>
+                </div>
+                <!-- End Chat messages display part -->
+
+                <!-- Type messages part -->
+                <div class="row chat-box no-gutters"> <!-- id = box -->
+                    <span class="" id="notifyTyping">User is typing ...</span>
+                    <div class="col-12">
+                        <form>
+                            <input type="text" name="" id="" class="form-control chat-box_type" placeholder="Type message here ..."
+                                aria-describedby="helpId">
+                            <!-- Send button -->
+                            <a name="" id="" href="#" role="button" class="chat-box_send"><i class="fab fa-telegram-plane"></i></a>
+                            <!-- Attach button -->
+                            <a name="" id="" href="#" role="button" class="chat-box_attach"><i class="fas fa-paperclip"></i></a>                    
+                        </form>
+                    </div>
+                </div>
+                <!-- End Type messages part -->
+
+            </div>
+            <!-- End chat session -->
+
+            <!-- Friend and Group list -->
+            <div class="col-3">
+
+                <!-- Friend list -->
+                <div class="friend-list">Friend List</div>
+                <div class="list-group friend-list_online">
+                    <!-- One friend -->
+                    <div class="list-group-item d-flex justify-content-between align-items-center items">
+                        Friend name
+                        <span class="badge badge-primary badge-pill">12</span>
+                    </div>         
+                    <!-- End One friend -->
+                </div>
+                <!-- End Friend list -->
+
+                <!-- Group list -->
+                <div class="group-list">
+                    Group List
+                    <i class="fas fa-plus"></i>                   
+                </div>
+                <div class="list-group group-list_online onlineGroups">
+                    <!-- One group -->
+                    <div class="list-group-item d-flex justify-content-between align-items-center items">
+                        Group name
+                        <span class="badge badge-primary badge-pill">12</span>
+                    </div>
+                    <!-- End One group -->
+                </div>
+                <!-- End Group list -->
+
+            </div>
+            <!-- End Friend and Group list -->
+
+        </div>
+        <!-- End overall row -->
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

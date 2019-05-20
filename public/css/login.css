@@ -1,0 +1,102 @@
+@font-face {
+  font-family: Roboto;
+  src: url('fonts/Roboto-Regular.ttf')  format('truetype');
+}
+
+* {
+  margin: 0;
+}
+
+.group-list span {
+  position: absolute;
+
+}
+
+a.signin {
+  text-decoration: none;
+  color: white;
+}
+
+.signin {
+  background-color: rgb(12,192,54);
+}
+
+.signin:hover{
+  background-color: rgb(47, 202, 41);
+}
+
+.register {
+  background-color: rgb(0,123,255);
+  color: white;
+}
+
+.login-form h2 {
+  font-family: Roboto;
+  padding-top: 5px;
+}
+
+a.btn.btn-link.forget-btn:hover {
+    text-decoration: none;
+    font-weight: 500;
+    color: rgb(0,144,255);
+}
+
+a.btn.btn-link.forget-btn {text-align: center;}
+
+.login-form form {
+  padding: 10px 5px;
+}
+
+.login-form {
+  border: 1.5px solid rgb(143,208,181);
+  border-radius: 10px;
+  background-color: #ffffff63;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+  max-width: 450px;
+}
+
+.login-btn input,
+.login-btn a {
+  margin-bottom: 5px;
+}
+
+.colorgraph {
+  height: 5px;
+  border-top: 0;
+  background: #c4e17f;
+  border-radius: 5px;
+  background-image: -webkit-linear-gradient(to right, rgb(40, 167, 69), #c4e17f 25%, #62c2e4 75%, rgb(0, 123, 255));
+  background-image: -moz-linear-gradient(to right, rgb(40, 167, 69), #c4e17f 25%, #62c2e4 75%, rgb(0, 123, 255));
+  background-image: -o-linear-gradient(to right, rgb(40, 167, 69), #c4e17f 25%, #62c2e4 75%, rgb(0, 123, 255));
+  background-image: linear-gradient(to right, rgb(40, 167, 69), #c4e17f 25%, #62c2e4 75%, rgb(0, 123, 255));
+}
+
+.remember-me {
+  position: relative;
+  top: 1px;
+}
+
+#bg {
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+}
+
+#bg img {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  min-width: 50%;
+  min-height: 50%;
+  -webkit-filter: blur(3px);
+  filter: blur(3px);
+}

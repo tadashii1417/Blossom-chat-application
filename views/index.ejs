@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>
+    <%= title %>
+  </title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+    crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+
+  <link rel='stylesheet' href='/css/style.css' type='text/css' />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js"></script>
+
+  <script src="/chat.js"></script>
+
+</head>
+
+<body>
+  <!-- <div class="onlineUsersContainer"> -->
+
+  <div class="container">
+    <div class="row menubar">
+      <div class="col-6 logo">Welcome to Blossom</div>
+      <div class="col-6 d-flex">
+        <div class="greeting ml-auto">
+          Hello, <a href="#" class="username" id="myName">
+            <%= account.email %></a> <a href="#" class="badge badge-primary">Log out</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+
+      <!-- Chat session -->
+      <div class="col-9">
+        <!-- Receiver name part -->
+        <div class="receiver">
+          Something fun ...
+          <span class="dot"></span>
+
+          <a name="" href="https://binhcaonguyen.github.io" role="button" class="chat-box_video" target="_blank"><i
+              class="fas fa-video" style="font-size:20px; margin:0px 0 0px 10px;"></i></a>
+
+        </div>
+        <!-- End Receiver name part -->
+
+        <!-- Chat messages display part -->
+        <div class="col-12 chat-screen">
+          <div class="row" id="messages">
+
+
+          </div>
+        </div>
+        <!-- End Chat messages display part -->
+
+        <!-- Type messages part -->
+        <div class="row chat-box no-gutters">
+          <!-- id = box -->
+          <span class="" id="notifyTyping" style="font-size:10px;margin-left:10px;">User is typing ...</span>
+          <div class="col-12" id="box">
+            <div class="row">
+              <div class="col-11">
+                <form class="type-mes form-inline">
+                  <!-- text-box -->
+                  <input type="text" name="" id="m" class="form-control chat-box_type" placeholder="Type message here ..."
+                    autocomplete="off" onkeyup="notifyTyping();">
+                  <!-- Send button -->
+                  <a name="" id="btnSend" href="#" role="button" class="chat-box_send" onclick="submitfunction();"><i
+                      class="fab fa-telegram-plane"></i></a>
+                </form>
+              </div>
+              <div class="col-1">
+                <form action="/dashboard" method="POST" class="form-inline upload">
+                  <!-- Attach button -->
+                  <a name="" id="btnFile" href="#" role="button" class="chat-box_attach upload-btn"><i class="fas fa-paperclip"></i></a>
+                  <input type="file" name="upload" id="upload-input" style="display:none">
+                </form>
+              </div>
+            </div>
+
+
+
+
+          </div>
+        </div>
+        <!-- End Type messages part -->
+
+      </div>
+      <!-- End chat session -->
+
+
+      <!-- Friend and Group list -->
+      <div class="col-3">
+        <!-- Friend list -->
+        <div class="friend-list">Friend List</div>
+        <div class="list-group friend-list_online" id="onlineUsers">
+          <!-- old ul -->
+          <!-- One friend -->
+
+          <!-- End One friend -->
+        </div>
+        <!-- End Friend list -->
+
+        <!-- Group list -->
+        <div class="group-list">
+          Group List
+          <!-- Create group button -->
+          <i class="fas fa-plus" id="btnGroup" onclick="createGroup()"></i>
+        </div>
+        <div class="list-group group-list_online" id="onlineGroups">
+
+        </div>
+        <!-- End Group list -->
+      </div>
+      <!-- End Friend and Group list -->
+
+    </div>
+  </div>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
